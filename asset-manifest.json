@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.96af3fe4.css",
-    "main.js": "/static/js/main.c03b4bbb.js",
+    "main.js": "/static/js/main.fd586fe1.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/Prashant_rathour_Resume.pdf": "/static/media/Prashant_rathour_Resume.83ca6034981ca3f4be84.pdf",
     "static/media/profile.jpeg": "/static/media/profile.4589ac11672b0dc53921.jpeg",
@@ -9,11 +9,11 @@
     "static/media/10798281_19362653_copy-removebg-preview.png": "/static/media/10798281_19362653_copy-removebg-preview.70146e84b95173ed039c.png",
     "index.html": "/index.html",
     "main.96af3fe4.css.map": "/static/css/main.96af3fe4.css.map",
-    "main.c03b4bbb.js.map": "/static/js/main.c03b4bbb.js.map",
+    "main.fd586fe1.js.map": "/static/js/main.fd586fe1.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.96af3fe4.css",
-    "static/js/main.c03b4bbb.js"
+    "static/js/main.fd586fe1.js"
   ]
 }
