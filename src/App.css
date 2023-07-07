@@ -1,9 +1,13 @@
+
+
 .App{
     
-    background-image: url("https://suddi.io/public/images/background.jpg");
-    height: 100vh;
-    box-sizing: border-box;
-    background-size: cover;
-    position: relative;
+    /* background-image: url("../src/Componens/4734683_2239793.jpg"); */
+    /* background-image: url("https://th.bing.com/th/id/R.85f4dcd8d77e97b0e1bfbcd27c95cb79?rik=WCf%2f%2b9OCjEqidg&riu=http%3a%2f%2freadsoftware.net%2fimages%2fpromo-5.jpeg&ehk=6qEVKRJ2WqT0fAYVcABvqNEk%2f%2fmEcr11vJvu7IJT5Vk%3d&risl=&pid=ImgRaw&r=0"); */
+
+    background-repeat: no-repeat;
+  background-size: cover;
+  /* background-clip: border-box; */
+/* background-color:#1E1E31; */
     
 }

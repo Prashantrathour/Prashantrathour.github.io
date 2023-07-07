@@ -2,15 +2,15 @@ import AnimatedText from 'react-animated-text-content';
 import React from 'react'
 import style from "./Home.module.css"
 import { Box, Heading } from '@chakra-ui/react';
-export default function Text({Text}) {
+export default function Text({Text,size,width}) {
   return (
     
 
-<Box>
+<Box style={{fontSize:size,fontFamily:"serif",textAlign:"center",fontStyle:"oblique",color:"white"}} width={width}>
 <AnimatedText
   type="chars" // animate words or chars
   animation={{
-    x: '200px',
+    x: '400px',
     y: '-20px',
     scale: 1.1,
     ease: 'ease-in-out',

@@ -1,10 +1,10 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import Home from '../Home'
-import About from '../About'
+import Home from '../Piediv'
+import About from '../Project'
 import Contact from '../Contact'
 import Skills from '../Skills'
-import Projects from '../Projects'
+import Projects from '../About'
 
 export default function AllRoutes() {
   return (

@@ -1,6 +1,12 @@
+
+@import url("https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css");
+
 .nav{
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    z-index: 10;
+border: 1px solid red;
+   
+}
+.calendar{
+border: 1px solid rgb(49, 5, 5);
+
+margin: 10px;
 }
