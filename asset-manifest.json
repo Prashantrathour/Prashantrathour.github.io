@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.346be14e.css",
-    "main.js": "/static/js/main.ef3f6f16.js",
+    "main.js": "/static/js/main.70f6f6a3.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/Screenshot (511).png": "/static/media/Screenshot (511).b3129512791e743d640d.png",
     "static/media/Prashant_rathour_Resume.pdf": "/static/media/Prashant_rathour_Resume.bb9a44d4098dccbe26e0.pdf",
@@ -73,11 +73,11 @@
     "static/media/Screenshot (786).png": "/static/media/Screenshot (786).ebdf7554196f59ef5cf2.png",
     "index.html": "/index.html",
     "main.346be14e.css.map": "/static/css/main.346be14e.css.map",
-    "main.ef3f6f16.js.map": "/static/js/main.ef3f6f16.js.map",
+    "main.70f6f6a3.js.map": "/static/js/main.70f6f6a3.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.346be14e.css",
-    "static/js/main.ef3f6f16.js"
+    "static/js/main.70f6f6a3.js"
   ]
 }
