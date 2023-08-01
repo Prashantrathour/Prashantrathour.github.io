@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import  { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import { motion } from "framer-motion";
 import { FiLinkedin, FiMail } from "react-icons/fi";
 import {
@@ -33,8 +35,29 @@ const ContactPage = () => {
   const [name, setName] = useState("");
   const [textarea, setTextarea] = useState("");
 
-  const sendmessage = (event) => {
-    event.preventDefault();
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_q697kin', 'template_ax7w7f5', form.current, 'RKK_WWcE_e6D25L_j')
+      .then((result) => {
+          console.log(result.text);
+          sendmessage()
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+
+
+
+
+
+
+
+  const sendmessage = () => {
+   
     if (email.length && name.length && textarea.length) {
       toast({
         title: "Message sent successfully",
@@ -90,7 +113,7 @@ const ContactPage = () => {
                       <Heading>Contact</Heading>
                       <Text
                         mt={{ sm: 3, md: 3, lg: 5 }}
-                        colorGradient="linear(to-l, rgb(16, 169, 240), rgb(233,78,27))"
+                        colorgradient="linear(to-l, rgb(16, 169, 240), rgb(233,78,27))"
                       >
                         Fill up the form below to contact
                       </Text>
@@ -192,6 +215,7 @@ const ContactPage = () => {
                     <Box bg="white" borderRadius="lg">
                       <Box m={8} color="#0B0E3F">
                         <VStack spacing={5}>
+                        <form ref={form} onSubmit={sendEmail}>
                           <FormControl id="name">
                             <FormLabel>Your Name</FormLabel>
                             <InputGroup borderColor="#E0E1E7">
@@ -200,9 +224,11 @@ const ContactPage = () => {
                                 children={<BsPerson color="gray.800" />}
                               />
                               <Input
+                              name="user_name"
                                 type="text"
                                 size="md"
                                 onChange={(e) => setName(e.target.value)}
+                                required
                               />
                             </InputGroup>
                           </FormControl>
@@ -214,6 +240,7 @@ const ContactPage = () => {
                                 children={<MdOutlineEmail color="gray.800" />}
                               />
                               <Input
+                              name="user_email"
                                 type="email"
                                 size="md"
                                 onChange={(e) => setEmail(e.target.value)}
@@ -224,6 +251,8 @@ const ContactPage = () => {
                           <FormControl id="message">
                             <FormLabel>Message</FormLabel>
                             <Textarea
+                            name="message"
+                            required
                               borderColor="gray.300"
                               _hover={{
                                 borderRadius: "gray.300",
@@ -237,12 +266,14 @@ const ContactPage = () => {
                               variant="solid"
                               bg="#0D74FF"
                               color="white"
-                              onClick={sendmessage}
+                              type="submit"
+                              // onClick={sendmessage}
                               _hover={{}}
                             >
                               Send Message
                             </Button>
                           </FormControl>
+                        </form>
                         </VStack>
                       </Box>
                     </Box>

@@ -17,33 +17,23 @@ import styled from "styled-components";
 import { WindupChildren } from "windups";
 import { FiDownload } from "react-icons/fi";
 import { HiOutlineHandRaised } from "react-icons/hi2";
-import resume from "../Componens/pdf/Prashant_rathour_Resume.pdf";
+import resume from "../Componens/Images/project/pdf/Prashant-Rathour-Resume.pdf";
 
-import {saveAs} from "file-saver"
+import { saveAs } from "file-saver";
 import theme from "./theme";
 import { SiHellofresh } from "react-icons/si";
 const HeroPage = () => {
   const [showText, setShowText] = useState(false);
-  const { colorMode, toggleColorMode} = useColorMode();
+  const { colorMode, toggleColorMode } = useColorMode();
   useEffect(() => {
     setShowText(true);
   }, []);
-  const handleDownload = () => {
-    const fileUrl = "https://prashantrathour.github.io/Prashant_rathour_Resume.pdf"; // Replace with the actual URL of the 
-    const atag=document.createElement('a')
-    atag.href=fileUrl
-    atag.setAttribute('download',"Prashant_rathour_Resume.pdf")
-    document.body.appendChild(atag)
-    atag.click()
-    atag.remove()
-  
-  };
 
   return (
     <DIV>
       <Box
         id="home"
-        color={colorMode=="light"?theme.colors.dark:theme.colors.bright}
+        color={colorMode == "light" ? theme.colors.dark : theme.colors.bright}
         py={20}
         px={10}
         textAlign="center"
@@ -63,13 +53,14 @@ const HeroPage = () => {
           <Heading as="h1" size="2xl" mb={4}>
             Welcome to My Portfolio
           </Heading>
-          <Text fontSize="3xl" fontWeight={"800"} mb={6} color={colorMode=="light"?"#0D74FF":"rgb(233, 78, 27)"}>
+          <Text
+            fontSize="3xl"
+            fontWeight={"800"}
+            mb={6}
+            color={colorMode == "light" ? "#0D74FF" : "rgb(233, 78, 27)"}
+          >
             <WindupChildren>
               {"Prashant Rathour "}
-            
-            
-              
-            
               {"(Full Stack"} <em>{"Web"}</em> {"Developer!)"}
             </WindupChildren>
           </Text>
@@ -114,11 +105,12 @@ const HeroPage = () => {
               maxW={["100%", "80%", "60%", "50%"]}
               alignSelf={"center"}
             >
-              
               <Heading as="h3" size="50px" mb={2}>
-              <span>
-                {/* <SiHellofresh />{" "} */}{"🖐"}
-              </span>{" "}  Hi,
+                <span>
+                  {/* <SiHellofresh />{" "} */}
+                  {"🖐"}
+                </span>{" "}
+                Hi,
               </Heading>
               {showText && (
                 <motion.div
@@ -143,56 +135,16 @@ const HeroPage = () => {
                       cursorBlinking={true}
                     />
                   </Text>
-                  <Text id="user-detail-intro">
-                   
+                  <span id="user-detail-intro">
                     Passionate{" "}
-                    <Text as="span" fontWeight={600} color="#72351C">
+                    <span style={{ fontWeight: 600, color: "#72351C" }}>
                       Full Stack Web Developer
-                    </Text>{" "}
-                    focus on writing clean and user friendly applications
-                  </Text>
+                    </span>{" "}
+                    focus on writing clean and user-friendly applications
+                  </span>
                 </motion.div>
               )}
-              
-
-
-
-
-              {/* <Box>
-            <Button
-              id="resume-button-2"
-              bgColor="#4375ff"
-              color="#3e2723"
-              fontSize="1.5em"
-            >
-              <a
-                id="resume-link-2"
-                href={resume}
-                download
-                textAlign="left"
-                onClick={() =>
-                  window.open(
-                    "https://drive.google.com/file/d/1cUEsLyp-gXO2SihaTYf16W2CyhGviVFx/view?usp=drive_link"
-                  )
-                }
-              >
-                Resume
-              </a>
-            </Button>
-            </Box> */}
-
-
-
-
-
-
-
-
-
-
-              
               <motion.button
-                whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 bg="gray.800"
                 color="white"
@@ -204,31 +156,30 @@ const HeroPage = () => {
                 mt={4}
                 // onClick={handleDownload}
                 id="resume-button-2"
-                
               >
-                  <a
-                id="resume-link-2"
-                href={resume}
-                download
-                textAlign="left"
-                onClick={() =>
-                  window.open(
-                    "https://drive.google.com/file/d/1cUEsLyp-gXO2SihaTYf16W2CyhGviVFx/view?usp=drive_link"
-                  )
-                }
-              >
-                <Flex
-                  className="btn"
-                  justifyContent={"center"}
-                  alignItems={"center"}
-                  gap={"5px"}
-                 
+                <a
+                  id="resume-link-2"
+                  href={resume}
+                  download
+                  // textAlign="left"
+                  onClick={() =>
+                    window.open(
+                      "https://drive.google.com/file/d/1cUEsLyp-gXO2SihaTYf16W2CyhGviVFx/view?usp=drive_link"
+                    )
+                  }
                 >
-                  <Text>Resume </Text>
-                  <Stack>
-                    <FiDownload />
-                  </Stack>
-                </Flex></a>
+                  <Flex
+                    className="btn"
+                    justifyContent={"center"}
+                    alignItems={"center"}
+                    gap={"5px"}
+                  >
+                    <Text>Resume </Text>
+                    <Stack>
+                      <FiDownload />
+                    </Stack>
+                  </Flex>
+                </a>
               </motion.button>
             </Box>
             <Box
@@ -241,15 +192,8 @@ const HeroPage = () => {
                 initial={{ opacity: 0, translateX: -100 }} // Adjust translateX value
                 animate={{ opacity: 1, translateX: 0 }}
                 transition={{ duration: 1, delay: 0.5 }}
-                whileHover={{ scale: 1.1, rotate: 5 }}
+                // whileHover={{ scale: 1.1, rotate: 5 }}
                 whileTap={{ scale: 0.9 }}
-                // style={{
-                //   position: "relative",
-                //   overflow: "hidden",
-                //   borderRadius: "50%",
-                //   boxShadow: "0px 5px 20px rgba(0, 0, 0, 0.3)",
-                //   filter: "grayscale(30%)",
-                // }}
               >
                 <Image
                   objectFit={"cover"}
@@ -271,15 +215,7 @@ const HeroPage = () => {
 export default HeroPage;
 
 const DIV = styled.div`
-  /* img{
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-   
-    padding: 5px;
-   }  */
-  /* .style{
-    box-shadow: rgba(255, 255, 255, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(255, 255, 255, 0.35) 0px -2px 6px 0px inset;
-   padding: 10px;
-   } */
+
 
   .btn {
     padding: 0.6em 2em;

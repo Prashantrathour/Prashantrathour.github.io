@@ -1,8 +1,8 @@
 import React from 'react';
 import { Box, Flex, Text, Link, IconButton } from '@chakra-ui/react';
-import { motion } from 'framer-motion';
+// import { motion } from 'framer-motion';
 import "./footer.css"
-import { BsHeart, BsHeartFill } from 'react-icons/bs';
+import { BsHeartFill } from 'react-icons/bs';
 import { FiGithub, FiLinkedin, FiMail } from 'react-icons/fi';
 import { ScrollLink } from 'react-scroll';
 const Footer = () => {
@@ -17,8 +17,8 @@ const Footer = () => {
       <Box className="wave" id="wave4"></Box>
     </Box>
     <ul className="social-icon">
-      <li className="social-icon__item"><a className="social-icon__link" href="#">
-      <Link
+      <li className="social-icon__item"><a className="social-icon__link" href="https://www.linkedin.com/in/prashant-rathour-web-developer">
+      <span><Link
             href="https://www.linkedin.com/in/prashant-rathour-web-developer"
             isExternal
           >
@@ -29,17 +29,15 @@ const Footer = () => {
               colorScheme="blue"
               variant="ghost"
               mx={2}
-              whileHover={{ scale: 1.1 }}
+              // whileHover={{ scale: 1.1 }}
             />
-          </Link>
+          </Link></span>
           
           
         </a></li>
-      {/* <li className="social-icon__item"><a className="social-icon__link" href="#">
-          <ion-icon name="logo-twitter"></ion-icon>
-        </a></li> */}
+
       <li className="social-icon__item"><a className="social-icon__link" href="#">
-      <Link href="mailto:prathour884@gmail.com" isExternal>
+     <span> <Link href="mailto:prathour884@gmail.com" isExternal>
             <IconButton
               aria-label="Email"
               icon={<FiMail />}
@@ -47,12 +45,12 @@ const Footer = () => {
               colorScheme="blue"
               variant="ghost"
               mx={2}
-              whileHover={{ scale: 1.1 }}
+              // whileHover={{ scale: 1.1 }}
             />
-          </Link>
+          </Link></span>
         </a></li>
       <li className="social-icon__item"><a className="social-icon__link" href="#">
-      <Link href="https://github.com/Prashantrathour" isExternal>
+      <span><Link href="https://github.com/Prashantrathour" isExternal>
             <IconButton
               aria-label="GitHub"
               icon={<FiGithub />}
@@ -60,21 +58,14 @@ const Footer = () => {
               colorScheme="blue"
               variant="ghost"
               mx={2}
-              whileHover={{ scale: 1.1 }}
+              // whileHover={{ scale: 1.1 }}
             />
-          </Link>
+          </Link></span>
         </a></li>
     </ul>
-    {/* <ul className="menu">
-      <NavLink to="home">Home<li className="menu__item"><a className="menu__link" href="#">Home</a></li></NavLink>
-      <NavLink to="about"><li className="menu__item"><a className="menu__link" href="#">About</a></li></NavLink>
-      <NavLink to="skills"><li className="menu__item"><a className="menu__link" href="#">Skill</a></li></NavLink>
-      <NavLink to="projects"><li className="menu__item"><a className="menu__link" href="#">Project</a></li></NavLink>
-      <NavLink to="contact"><li className="menu__item"><a className="menu__link" href="#">Contact</a></li></NavLink>
 
-    </ul> */}
     <Flex  justify={"center"} wrap={"wrap"}>
-    <p>&copy;2023 Prashant Rathour | Created By Prashant Rathour </p><Box mt={5} ml={2} ><BsHeartFill fill='red'/></Box></Flex>
+    <Text>&copy;2023 Prashant Rathour | Created By Prashant Rathour </Text><Box mt={5} ml={2} ><BsHeartFill fill='red'/></Box></Flex>
   </footer>
     </Box>
   );

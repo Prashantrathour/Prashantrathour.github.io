@@ -13,7 +13,7 @@ const { colorMode, toggleColorMode} = useColorMode();
   return (
     <Box className='skills-card'>
     <motion.div
-      whileHover={{ y: -10 }}
+      // whileHover={{ y: -10 }}
       whileTap={{ scale: 0.9 }}
     >
       <Box
@@ -22,7 +22,7 @@ const { colorMode, toggleColorMode} = useColorMode();
         color={colorMode=="light"?"black":' rgb(233,78,27)'}
         borderRadius="md"
        id='skills'
-        textAlign="center"
+        // textAlign="center"
         display="flex"
         flexDirection="column"
         alignItems="center"

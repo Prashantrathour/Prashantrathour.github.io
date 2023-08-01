@@ -60,7 +60,7 @@ const Calendar = ({ username }) => {
             mx={1}
             my={2}
             p={1}
-            textAlign="center"
+            // textAlign="center"
           >
             <FaCircle size={16} color="#fff" />
             <Text fontSize="xs" color="gray.800" mt={1}>

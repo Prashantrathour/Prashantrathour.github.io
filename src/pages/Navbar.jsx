@@ -10,34 +10,25 @@ import {
   VStack,
   Text,
   Button,
-  useColorMode,
+  // useColorMode,
   Stack,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
-import { color, motion } from "framer-motion";
+import {  motion } from "framer-motion";
 import { Link as ScrollLink } from "react-scroll";
 import ColorModeSwitcher from "../Componens/Colormodeswicher";
 import { FiDownload } from "react-icons/fi";
 import styled from "styled-components";
-import resume from "../Componens/pdf/Prashant_rathour_Resume.pdf";
-import { Link } from "react-router-dom";
+import resume from "../Componens/Images/project/pdf/Prashant-Rathour-Resume.pdf";
+
+
 export const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
-const [active, setActive] = React.useState("Home");
-  const [visible, setVisible] = React.useState(true);
-  const MotionBox = motion(Box);
-  const handleDownload = () => {
-    const fileUrl =
-      "https://prashantrathour.github.io/Prashant_rathour_Resume.pdf"; // Replace with the actual URL of the
-    const atag = document.createElement("a");
-    atag.href = fileUrl;
-    atag.setAttribute("download", "Prashant_rathour_Resume.pdf");
-    document.body.appendChild(atag);
-    atag.click();
-    atag.remove();
-  };
 
-  const { colorMode, toggleColorMode} = useColorMode();
+  const MotionBox = motion(Box);
+
+
+  // const { colorMode, toggleColorMode} = useColorMode();
   return (
     <DIV>
     <Flex
@@ -54,7 +45,7 @@ const [active, setActive] = React.useState("Home");
       bgGradient="linear(to-l, rgb(16, 169, 240), rgb(233,78,27))"
       color={"#ffffff"}
       fontWeight={600}
-      boxShadow= "rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset"
+      // boxShadow= "rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset"
       // background= "#ffffff"
     >
       <Box>
@@ -75,11 +66,11 @@ const [active, setActive] = React.useState("Home");
            id="resume-button-1"
               variant={"unstyled"}
             >
-              <a
+              <span><a
                 id="resume-link-1"
                 href={resume}
                 download
-                textAlign="left"
+                // textAlign="left"
                 onClick={() =>
                   window.open(
                     "https://drive.google.com/file/d/1cUEsLyp-gXO2SihaTYf16W2CyhGviVFx/view?usp=drive_link"
@@ -97,7 +88,7 @@ const [active, setActive] = React.useState("Home");
                     <FiDownload  />
                   </Stack>
                 </Flex>
-              </a>
+              </a></span>
             </Button>
             </Box>
         <ColorModeSwitcher/>
@@ -123,7 +114,9 @@ const [active, setActive] = React.useState("Home");
         zIndex="998"
         display={{ base: isOpen ? "block" : "none", md: "none" }}
       >
-        <Flex  boxShadow= "rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset" justify="flex-end" padding="1rem"  bgGradient="linear(to-l, rgb(16, 169, 240), rgb(233,78,27))">
+        <Flex  
+        // boxShadow= "rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset" justify="flex-end" padding="1rem"  bgGradient="linear(to-l, rgb(16, 169, 240), rgb(233,78,27))"
+        >
           <IconButton
             aria-label="Close menu"
             icon={<CloseIcon />}
@@ -140,7 +133,7 @@ const [active, setActive] = React.useState("Home");
             spacing="0.5rem"
             bgGradient="linear(to-l, rgb(16, 169, 240), rgb(233,78,27))"
             fontWeight={600}
-            boxShadow= "rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset" 
+            // boxShadow= "rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset" 
           >
             <MobileNavLink to="home" onClose={onClose}>
               Home
@@ -165,11 +158,12 @@ const [active, setActive] = React.useState("Home");
           variant={"unstyled"}
               
             >
+            <span>
               <a
               
                 href={resume}
                 download
-                textAlign="left"
+                // textAlign="left"
                 onClick={() =>
                   window.open(
                     "https://drive.google.com/file/d/1cUEsLyp-gXO2SihaTYf16W2CyhGviVFx/view?usp=drive_link"
@@ -187,7 +181,7 @@ const [active, setActive] = React.useState("Home");
                     <FiDownload  />
                   </Stack>
                 </Flex>
-              </a>
+              </a></span>
             </Button>
             </Box>
               
@@ -210,7 +204,7 @@ const NavLink = ({ to, children }) => (
     offset={-60}
     duration={500}
   >
-    <ChakraLink className={`link nav-link ${to}`} as="span">{children}</ChakraLink>
+   <span><ChakraLink className={`link nav-link ${to}`} as="span">{children}</ChakraLink></span> 
   </ScrollLink>
 );
 
@@ -223,12 +217,12 @@ const MobileNavLink = ({ to, children, onClose }) => (
     offset={-60}
     duration={500}
     onClick={onClose}
-    boxShadow= "rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset"
+    // boxShadow= "rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset"
     className="linkmob"
   >
-    <ChakraLink cursor={"pointer"} fontWeight={"500"} as="span" >
+    <span><ChakraLink cursor={"pointer"} fontWeight={"500"} as="span" >
       {children}
-    </ChakraLink>
+    </ChakraLink></span>
   </ScrollLink>
 );
 

@@ -9,11 +9,10 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
-import image from "../Componens/Images/profile.jpeg";
+import image from "../Componens/Images/project/profile.jpg";
 import SkillsTabs from "./Skilltab";
 import theme from "./theme";
-import { Button } from "react-scroll";
-import resume from "../Componens/pdf/Prashant_rathour_Resume.pdf";
+
 const About = () => {
   const { colorMode, toggleColorMode } = useColorMode();
 
