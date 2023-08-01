@@ -13,11 +13,7 @@ const GithubCalendarComponent = () => {
 
     // Use a proxy
 
-    GitHubCalendar(".calendar", "prashantrathour", {
-      proxy() {
-        return fetch(`https://your-proxy.com/github?user=${"prashantrathour"}`);
-      },
-    });
+  
   }, []);
   const { colorMode, toggleColorMode } = useColorMode();
   return (

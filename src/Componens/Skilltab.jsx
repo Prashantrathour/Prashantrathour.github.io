@@ -10,13 +10,17 @@ import {
   ListIcon,
   Text,
   Button,
+  Stack,
+  Flex,
 } from "@chakra-ui/react";
+import { motion } from "framer-motion";
 import { SiJavascript, SiTypescript } from "react-icons/si";
 import styled from "styled-components";
 import { FaHtml5, FaCss3, FaJs, FaReact, FaCode } from 'react-icons/fa';
 import { SiRedux, SiCypress, SiMongodb, SiExpress, SiNodedotjs, SiPostman } from 'react-icons/si';
 import {TbBrandVscode} from "react-icons/tb"
-import resume from "../Componens/pdf/Prashant_rathour_Resume.pdf";
+import resume from "../Componens/Images/project/pdf/Prashant-Rathour-Resume.pdf";
+import { FiDownload } from "react-icons/fi";
 
 const SkillsTabs = () => {
 
@@ -51,10 +55,10 @@ const SkillsTabs = () => {
               <List spacing={3} className="skills-list">
 
 
-                {technicalSkills.map((skill)=>{
+                {technicalSkills.map((skill,i)=>{
                     return(
-                    <ListItem  >
-                  <ListIcon as={skill.icon} color={skill.color} />{skill.name}
+                    <ListItem  key={i} >
+                  <ListIcon key={i} as={skill.icon} color={skill.color} />{skill.name}
                 </ListItem>    
                     )
                 })}
@@ -95,26 +99,46 @@ const SkillsTabs = () => {
             </TabPanel>
             <TabPanel className="tab-panel">
               <Box>
-            <Button
-              id="resume-button-2"
-              bgColor="#4375ff"
-              color="#3e2723"
-              fontSize="1.5em"
-            >
-              <a
+              <motion.button
+                // whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                bg="gray.800"
+                color="white"
+                px={8}
+                py={4}
+                rounded="md"
+                shadow="lg"
+                fontSize="md"
+                mt={4}
+                // onClick={handleDownload}
+                id="resume-button-2"
+                
+              >
+                  <a
                 id="resume-link-2"
                 href={resume}
                 download
-                textAlign="left"
+                // textAlign="left"
                 onClick={() =>
                   window.open(
                     "https://drive.google.com/file/d/1cUEsLyp-gXO2SihaTYf16W2CyhGviVFx/view?usp=drive_link"
                   )
                 }
               >
-                Resume
-              </a>
-            </Button>
+                <Flex
+                  className="btn"
+                  justifyContent={"center"}
+                  alignItems={"center"}
+                  gap={"5px"}
+                 
+                >
+                  <Text>Resume </Text>
+                  <Stack>
+                    <FiDownload />
+                  </Stack>
+                </Flex></a>
+              </motion.button>
+         
             </Box>
             </TabPanel>
           </TabPanels>
@@ -196,4 +220,74 @@ margin: 10px;
       flex-basis: 40%;
     }
   }
+
+  .btn {
+    padding: 0.6em 2em;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin-top: 10px;
+  }
+
+  .btn:before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    animation: glowing-button-85 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+  }
+
+  @keyframes glowing-button-85 {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+
+  .btn:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #222;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+ 
+
 `;
