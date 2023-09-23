@@ -1,8 +1,8 @@
 import { Box, Heading, Text, useColorMode } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
-import { FaHtml5, FaCss3, FaJs, FaReact, FaCode } from 'react-icons/fa';
-import { SiRedux, SiCypress, SiMongodb, SiExpress, SiNodedotjs, SiPostman, SiTypescript } from 'react-icons/si';
-import {TbBrandVscode} from "react-icons/tb"
+import { FaHtml5, FaCss3, FaJs, FaReact, FaCode,FaPython } from 'react-icons/fa';
+import { SiRedux, SiCypress, SiMongodb, SiExpress, SiNodedotjs, SiPostman, SiTypescript, SiPython, SiDjango, SiAngularjs, SiTailwindcss, SiChakraui, SiGithub, SiGit, SiJsonwebtokens, SiJson } from 'react-icons/si';
+import {TbBrandOpenai, TbBrandVscode, TbJson, TbPrompt} from "react-icons/tb"
 import React, { useState } from "react"
 import styled from 'styled-components';
 import Piediv from './Piediv';
@@ -22,7 +22,7 @@ const { colorMode, toggleColorMode} = useColorMode();
         color={colorMode=="light"?"black":' rgb(233,78,27)'}
         borderRadius="md"
        id='skills'
-        // textAlign="center"
+        textAlign="center"
         display="flex"
         flexDirection="column"
         alignItems="center"
@@ -32,7 +32,7 @@ const { colorMode, toggleColorMode} = useColorMode();
         overflow="hidden"
         width="150px"
         height="150px"
-        // className='card skills-card'
+        className='card skills-card'
         
       >
        <Box      className='skills-card'>
@@ -51,7 +51,7 @@ const { colorMode, toggleColorMode} = useColorMode();
             {React.createElement(icon, { size: 32,color })}
           </motion.span>
         </Box>
-        <Text className="skills-card-name" mt={2} fontWeight="bold" overflow="hidden" textOverflow="ellipsis" whiteSpace="nowrap" >
+        <Text className="skills-card-name" mt={2} fontWeight="bold" overflow="hidden" textOverflow="ellipsis" whiteSpace="wrap" >
           {name}
         </Text>
         </Box>
@@ -61,9 +61,11 @@ const { colorMode, toggleColorMode} = useColorMode();
   );
 };
 
-const technicalSkills = [
+export const technicalSkills = [
   { name: 'HTML', icon: FaHtml5,color:"#E34F26" },
   { name: 'CSS', icon: FaCss3,color:"#1572B6" },
+  { name: 'Tailwind CSS', icon: SiTailwindcss,color:"#1572B6" },
+  { name: 'Chakra UI', icon: SiChakraui,color:"#1572B6" },
   { name: 'JavaScript', icon: FaJs,color:"#e0c632" },
   { name: 'React', icon: FaReact,color:"#61DAFB" },
   { name: 'Redux', icon: SiRedux,color:"#764ABC" },
@@ -72,9 +74,18 @@ const technicalSkills = [
   { name: 'Mongo Database', icon: SiMongodb,color:"#82C341" },
   { name: 'Express', icon: SiExpress,color:"#000000" },
   { name: 'Node.js', icon: SiNodedotjs,color:"#339933" },
+  { name: 'JWT (json Web Token)', icon: SiJsonwebtokens,color:"#e21c6f" },
+  { name: 'Json-Server', icon: TbJson,color:"#1cbae2" },
+  { name: 'TypeScript', icon: SiTypescript,color:"#1e70ec" },
+  { name: 'Python', icon: FaPython,color:"#306998" },
+  { name: 'Django', icon: SiDjango,color:"#092E20" },
+  { name: 'Angular', icon: SiAngularjs,color:"#b52e31" },
+  { name: 'Generative AI (Openai)', icon:TbBrandOpenai,color:"#000000" },
+  { name: 'Prompt Engineering', icon:TbPrompt,color:"#000000" },
+  { name: 'Git', icon: SiGit,color:"#F1502F" },
+  { name: 'GitHub', icon: SiGithub,color:"#010a11" },
   { name: 'Postman', icon: SiPostman,color:"#FF6C37" },
   { name: 'VsCode', icon: TbBrandVscode,color:"#1eb2ec" },
-  { name: 'TypeScript', icon: SiTypescript,color:"#1e70ec" },
 ];
 
 const Skills = () => {

@@ -29,6 +29,7 @@ import {
   healthcare_images,
   myntra_images,
   nykaa_images,
+  progressio_images,
   tradehub,
 } from "./Images/project/tradehub";
 
@@ -100,7 +101,18 @@ const LiveDeployedLink = styled(Link)`
 `;
 
 const Project = () => {
-  const projects = [
+  const projects = [{
+    title: "Progressio.com",
+    description:
+      "An LMS, or Learning Management System, streamlines online education by managing content, assignments, and tracking progress.",
+    techStack: "HTML,CSS,JavaScript,Python ,Django ,Angular ,Postgresql ,Django-Relationships, Token-based-authentication, Tailwind-css",
+    duration: "Oct 2022 - Present",
+    images: progressio_images, // Replace with the actual image URL or import the image
+    viewProjectLink: "https://github.com/Prashantrathour/progressio.com",
+    liveDeployedLink:
+      "https://progressiolms.netlify.app/",
+    Date: "Sep-2023",
+  },
     {
       title: "Tradehub",
       description:
@@ -162,6 +174,7 @@ const Project = () => {
         "https://shimmering-sorbet-d86e03.netlify.app/index.html",
       Date: "Fab-2023",
     },
+    
     // Add more projects here
   ];
   const openLinkInNewTab = (url) => {
@@ -180,7 +193,7 @@ const Project = () => {
         p={5}
         color={colorMode === "light" ? "black" : "white"}
       >
-        <Heading fontFamily="Proxima Nova, Arial, sans-serif" fontSize="6xl">
+        <Heading fontFamily="Proxima Nova, Arial, sans-serif" fontSize="4xl">
           My Projects
         </Heading>
       </Box>
@@ -259,11 +272,12 @@ const Project = () => {
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.5 }}
                     >
-                      <Text
-                        className="project-title"
+                      <Text as="span" fontWeight="bold" color="linear(to-l, rgb(16, 169, 240), rgb(233,78,27))" className="project-title">
+      
+                        
                        
                         
-                      >
+                      
                         {project.title}
                       </Text>
                     </motion.h3>
@@ -288,7 +302,10 @@ const Project = () => {
                         className="project-tech-stack"
                         fontFamily="Montserrat, Arial, sans-serif"
                       >
-                        Tech Stack: {project.techStack}
+                        <Text as="span" fontWeight="bold" bg="linear(to-l, rgb(16, 169, 240), rgb(233,78,27))">
+         
+       
+                        Tech Stack: </Text> {project.techStack}
                       </Text>
                     </motion.p>
                     <ProjectLinks>
