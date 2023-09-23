@@ -41,24 +41,7 @@ const About = () => {
             <Heading as="h2" size="xl" mb={6}>
               About Me
             </Heading>
-            <Text
-              id="user-detail-intro"
-              fontSize="lg"
-              mb={6}
-              fontFamily={"Montserrat, Arial, sans-serif"}
-            >
-           
-I'm Prashant Rathour, a passionate Full Stack Web Developer with expertise in front-end technologies like React, Redux, and Chakra UI, as well as back-end tools such as Node.js, Express.js, and MongoDB. I thrive on exploring different tech stacks and environments, constantly staying updated with the latest trends. My dedication to writing clean code and creating user-friendly web applications drives me. With a Bachelor's degree in Mechanical Engineering, I bring problem-solving skills and adaptability to my work. I'm now seeking opportunities to contribute my skills, knowledge, and passion to an organization that fosters growth and learning.
-            </Text>
-            {/* <Text fontSize="lg" fontFamily={"Montserrat, Arial, sans-serif"}>
-            My coding journey began a few years ago when I printed my first "Hello world" message. Since then, I've been hooked on creating attractive and functional websites. I completed my Bachelor's degree in Mechanical Engineering from Future Institute of Engineering and Technology, Bareilly in 2020.
-            </Text> */}
-          
-          </motion.div>
-
-          <SkillsTabs />
-        </Box>
-        <Box
+            <Box
           display={"flex"}
           p={5}
           width={"-moz-fit-content"}
@@ -79,6 +62,61 @@ I'm Prashant Rathour, a passionate Full Stack Web Developer with expertise in fr
             />
           </motion.div>
         </Box>
+            <Text
+              id="user-detail-intro"
+              fontSize="lg"
+              mb={6}
+              fontFamily={"Montserrat, Arial, sans-serif"}
+            >
+           
+           <Text fontSize="lg" mb={4}>
+        Hi, I'm{" "}
+        <Text as="span" fontWeight="bold" color="#72351C">
+          Prashant Rathour
+        </Text>
+        , a former mechanical engineer turned full-stack web developer. My journey began with a "Hello World" program, and after 1.5 years in the mechanical industry, I transitioned into Information Technology.
+      </Text>
+      <Text fontSize="lg" mb={4}>
+        I completed a{" "}
+        <Text as="span" fontWeight="bold" color="#72351C">
+          35-week full-stack web development course
+        </Text>{" "}
+        at{" "}
+        <Text as="span" fontWeight="bold" color="#72351C">
+          Masai School
+        </Text>
+        , gaining hands-on experience in both backend and frontend development. I also delved into <Text as="span" fontWeight="bold" color="#72351C">
+          Generative AI and Prompt Engineering
+        </Text>, empowering me to swiftly adapt to new tech stacks.
+      </Text>
+      <Text fontSize="lg" mb={4}>
+        During this journey, I successfully delivered{" "}
+        <Text as="span" fontWeight="bold" color="#72351C">
+          over 6+ major projects
+        </Text>
+        , worked on{" "}
+        <Text as="span" fontWeight="bold" color="#72351C">
+          more than 20 mini-projects
+        </Text>
+        , and handled{" "}
+        <Text as="span" fontWeight="bold" color="#72351C">
+          3+ full-stack projects
+        </Text>
+        . My tech stack includes HTML, CSS, JavaScript, React, Redux, Chakra UI, Tailwind CSS, TypeScript, Express, Node.js, MongoDB, and JWT authentication. I further expanded my skills to Python, Django, and Angular, all thanks to Generative AI and Prompt Engineering.
+      </Text>
+      <Text fontSize="lg" mb={4}>
+        I'm passionate about continuous learning and innovation, and I'm eager to contribute my expertise to impactful IT projects.
+      </Text>
+      <Text fontSize="lg">
+        Let's collaborate and create innovative digital solutions together!
+      </Text>
+      </Text>
+          
+          </motion.div>
+
+          <SkillsTabs />
+        </Box>
+        
       </Flex>
     </Box>
   );

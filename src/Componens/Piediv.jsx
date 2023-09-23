@@ -72,7 +72,7 @@ function Piediv() {
               <Box className="danny Col4"></Box>
             </Box>
             <Box className="stat-circle-cover">
-              <span className="stat-number">4</span>
+              <span className="stat-number">6</span>
             </Box>
           </Box>
           <Box className="box712">

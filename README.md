@@ -1,2 +1,2 @@
-to deploye gain 
+to deploye again 
 `npm run deploy`
