@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.346be14e.css",
-    "main.js": "/static/js/main.7d9f0aee.js",
+    "main.css": "/static/css/main.d2aad1be.css",
+    "main.js": "/static/js/main.118e172f.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
+    "static/media/Prashant-Rathour-Resume.pdf": "/static/media/Prashant-Rathour-Resume.7aaa5d5f068e367bb29a.pdf",
     "static/media/Screenshot (511).png": "/static/media/Screenshot (511).b3129512791e743d640d.png",
-    "static/media/Prashant-Rathour-Resume.pdf": "/static/media/Prashant-Rathour-Resume.a6a68b2fb5d2b274ff60.pdf",
     "static/media/Screenshot (518).png": "/static/media/Screenshot (518).fbf29ef4efcff00c0922.png",
     "static/media/Screenshot (508).png": "/static/media/Screenshot (508).a0b7aeb6760f503c64ad.png",
     "static/media/Screenshot (513).png": "/static/media/Screenshot (513).97fee7e64c5a057e4ee1.png",
@@ -72,12 +72,12 @@
     "static/media/Screenshot (772).png": "/static/media/Screenshot (772).40edee890cd60f12e8b9.png",
     "static/media/Screenshot (786).png": "/static/media/Screenshot (786).ebdf7554196f59ef5cf2.png",
     "index.html": "/index.html",
-    "main.346be14e.css.map": "/static/css/main.346be14e.css.map",
-    "main.7d9f0aee.js.map": "/static/js/main.7d9f0aee.js.map",
+    "main.d2aad1be.css.map": "/static/css/main.d2aad1be.css.map",
+    "main.118e172f.js.map": "/static/js/main.118e172f.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.346be14e.css",
-    "static/js/main.7d9f0aee.js"
+    "static/css/main.d2aad1be.css",
+    "static/js/main.118e172f.js"
   ]
 }
