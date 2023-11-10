@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.d2aad1be.css",
-    "main.js": "/static/js/main.08ff0bb5.js",
-    "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
-    "static/media/Prashant-Rathour-Resume.pdf": "/static/media/Prashant-Rathour-Resume.7aaa5d5f068e367bb29a.pdf",
+    "main.css": "/static/css/main.af9d2e38.css",
+    "main.js": "/static/js/main.a341e4df.js",
+    "static/js/988.f9d92b26.chunk.js": "/static/js/988.f9d92b26.chunk.js",
     "static/media/Screenshot (511).png": "/static/media/Screenshot (511).b3129512791e743d640d.png",
+    "static/media/Prashant-Rathour-Resume.pdf": "/static/media/Prashant-Rathour-Resume.8c36bb230cc526af68af.pdf",
     "static/media/Screenshot (518).png": "/static/media/Screenshot (518).fbf29ef4efcff00c0922.png",
     "static/media/Screenshot (508).png": "/static/media/Screenshot (508).a0b7aeb6760f503c64ad.png",
     "static/media/Screenshot (513).png": "/static/media/Screenshot (513).97fee7e64c5a057e4ee1.png",
@@ -14,6 +14,7 @@
     "static/media/Screenshot (792).png": "/static/media/Screenshot (792).fc4b63902932a11ba5a9.png",
     "static/media/Screenshot (782).png": "/static/media/Screenshot (782).6dbfc6cf8aea18fcebef.png",
     "static/media/Screenshot (656).png": "/static/media/Screenshot (656).f7e6384ee05c687667ed.png",
+    "static/media/Screenshot (715).png": "/static/media/Screenshot (715).23f576ff21b7e7eaaf89.png",
     "static/media/Screenshot (509).png": "/static/media/Screenshot (509).673ec3c97f58a3a51274.png",
     "static/media/Screenshot (773).png": "/static/media/Screenshot (773).881ca247cb6deece1ca5.png",
     "static/media/Screenshot (780).png": "/static/media/Screenshot (780).5cb539bccd50adf62738.png",
@@ -48,6 +49,7 @@
     "static/media/Screenshot (682).png": "/static/media/Screenshot (682).95115ba35a2a873e3cdd.png",
     "static/media/Screenshot (677).png": "/static/media/Screenshot (677).c3c3149ff2e7735bb549.png",
     "static/media/Screenshot (657).png": "/static/media/Screenshot (657).53793c5c43e6b2946cd3.png",
+    "static/media/Screenshot (750).png": "/static/media/Screenshot (750).57a335784c18f6a4826a.png",
     "static/media/Screenshot (797).png": "/static/media/Screenshot (797).d31cff94dbdb72a68731.png",
     "static/media/Screenshot (521).png": "/static/media/Screenshot (521).10c9d323af456e4e52de.png",
     "static/media/Screenshot (519).png": "/static/media/Screenshot (519).1af303780e521e819c4c.png",
@@ -64,18 +66,18 @@
     "static/media/Screenshot (787).png": "/static/media/Screenshot (787).548154dce56ce5639d6b.png",
     "static/media/Screenshot (683).png": "/static/media/Screenshot (683).651f22242379c5cc6730.png",
     "static/media/10798281_19362653_copy-removebg-preview.png": "/static/media/10798281_19362653_copy-removebg-preview.70146e84b95173ed039c.png",
-    "static/media/profile.jpg": "/static/media/profile.df5b6919dbe3d6b6b10c.jpg",
     "static/media/Screenshot (533).png": "/static/media/Screenshot (533).f56935f05afea86d577c.png",
     "static/media/Screenshot (785).png": "/static/media/Screenshot (785).1609fa347eee56a23cfc.png",
     "static/media/Screenshot (772).png": "/static/media/Screenshot (772).40edee890cd60f12e8b9.png",
     "static/media/Screenshot (786).png": "/static/media/Screenshot (786).ebdf7554196f59ef5cf2.png",
+    "static/media/profile.jpg": "/static/media/profile.59af7c573662f5008257.jpg",
     "index.html": "/index.html",
-    "main.d2aad1be.css.map": "/static/css/main.d2aad1be.css.map",
-    "main.08ff0bb5.js.map": "/static/js/main.08ff0bb5.js.map",
-    "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
+    "main.af9d2e38.css.map": "/static/css/main.af9d2e38.css.map",
+    "main.a341e4df.js.map": "/static/js/main.a341e4df.js.map",
+    "988.f9d92b26.chunk.js.map": "/static/js/988.f9d92b26.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d2aad1be.css",
-    "static/js/main.08ff0bb5.js"
+    "static/css/main.af9d2e38.css",
+    "static/js/main.a341e4df.js"
   ]
 }
