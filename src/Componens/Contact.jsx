@@ -31,6 +31,7 @@ import { MdOutlineEmail } from "react-icons/md";
 
 const ContactPage = () => {
   const toast = useToast();
+  const [loading,setloading]=useState(false)
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [textarea, setTextarea] = useState("");
@@ -40,13 +41,15 @@ const ContactPage = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
+    setloading(true)
     emailjs.sendForm('service_q697kin', 'template_ax7w7f5', form.current, 'RKK_WWcE_e6D25L_j')
       .then((result) => {
           console.log(result.text);
           sendmessage()
+          setloading(false)
       }, (error) => {
           console.log(error.text);
+          setloading(false)
       });
   };
 
@@ -64,12 +67,18 @@ const ContactPage = () => {
         status: "success",
         description: `Thanks Mr/Ms ${name}. We will reply to you in a couple of hours.`,
       });
+      setEmail("")
+      setName("")
+      setTextarea("")
     }else{
       toast({
         title: "Fill all details",
         status: "info"
      
       });
+      setEmail("")
+      setName("")
+      setTextarea("")
     }
   };
 
@@ -224,6 +233,7 @@ const ContactPage = () => {
                                 children={<BsPerson color="gray.800" />}
                               />
                               <Input
+                              value={name}
                               name="user_name"
                                 type="text"
                                 size="md"
@@ -242,6 +252,7 @@ const ContactPage = () => {
                               <Input
                               name="user_email"
                                 type="email"
+                                value={email}
                                 size="md"
                                 onChange={(e) => setEmail(e.target.value)}
                                 required
@@ -252,6 +263,7 @@ const ContactPage = () => {
                             <FormLabel>Message</FormLabel>
                             <Textarea
                             name="message"
+                            value={textarea}
                             required
                               borderColor="gray.300"
                               _hover={{
@@ -269,6 +281,7 @@ const ContactPage = () => {
                               type="submit"
                               // onClick={sendmessage}
                               _hover={{}}
+                              isLoading={loading}
                             >
                               Send Message
                             </Button>

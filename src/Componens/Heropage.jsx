@@ -140,7 +140,7 @@ const HeroPage = () => {
                     <span style={{ fontWeight: 600, color: "#72351C" }}>
                       Full Stack Web Developer
                     </span>{" "}
-                    focus on writing clean and user-friendly applications
+                    skilled in MERN stack, JavaScript, React, and Express.js. Swift mastery of new tech stacks, including Generative AI. Excellent problem-solving and communication aptitudes. Collaborative and adaptable team player.
                   </span>
                 </motion.div>
               )}

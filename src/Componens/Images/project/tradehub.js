@@ -62,6 +62,26 @@ import image659 from "./Nykaa/Screenshot (659).png";
 import image660 from "./Nykaa/Screenshot (660).png";
 import image661 from "./Nykaa/Screenshot (661).png";
 import image662 from "./Nykaa/Screenshot (662).png";
+
+
+const image0 = "https://ik.imagekit.io/ntmgxa7c6/progressio/Screenshot%20(838).png?updatedAt=1695456016730";
+const image1 = "https://ik.imagekit.io/ntmgxa7c6/progressio/Screenshot%20(839).png?updatedAt=1695456016730";
+const image2 = "https://ik.imagekit.io/ntmgxa7c6/progressio/Screenshot%20(843).png?updatedAt=1695456016730";
+const image3 = "https://ik.imagekit.io/ntmgxa7c6/progressio/Screenshot%20(844).png?updatedAt=1695456016730";
+const image4 = "https://ik.imagekit.io/ntmgxa7c6/progressio/Screenshot%20(846).png?updatedAt=1695456016730";
+const image5 = "https://ik.imagekit.io/ntmgxa7c6/progressio/Screenshot%20(847).png?updatedAt=1695456016730";
+const image6 = "https://ik.imagekit.io/ntmgxa7c6/progressio/Screenshot%20(849).png?updatedAt=1695456016730";
+const image7 = "https://ik.imagekit.io/ntmgxa7c6/progressio/Screenshot%20(850).png?updatedAt=1695456016730";
+const image8 = "https://ik.imagekit.io/ntmgxa7c6/progressio/Screenshot%20(851).png?updatedAt=1695456016730";
+const image9 = "https://ik.imagekit.io/ntmgxa7c6/progressio/Screenshot%20(852).png?updatedAt=1695456016730";
+const image10 = "https://ik.imagekit.io/ntmgxa7c6/progressio/Screenshot%20(853).png?updatedAt=1695456016730";
+const image11= "https://ik.imagekit.io/ntmgxa7c6/progressio/Screenshot%20(854).png?updatedAt=1695456016730";
+const image12 = "https://ik.imagekit.io/ntmgxa7c6/progressio/Screenshot%20(855).png?updatedAt=1695456016730";
+
+
+
+
+
 export const tradehub = [
   image772,
   image773,
@@ -134,4 +154,20 @@ export const nykaa_images = [
   image660,
   image661,
   image662
+];
+export const progressio_images = [
+  
+image0,
+image1,
+image2,
+image3,
+image4,
+image5,
+image6,
+image7,
+image8,
+image9,
+image10,
+image11,
+image12,
 ];
